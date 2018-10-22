@@ -1,0 +1,107 @@
+@font-face {
+    font-family: adobe;
+    src: url(fonts/adobe/AdobeDevanagari-Regular.otf);
+}
+
+@font-face {
+    font-family: adobe-italic;
+    src: url(fonts/adobe/AdobeDevanagari-Italic.otf);
+    font-style: italic;
+}
+
+@font-face {
+    font-family: adobe-bold-italic;
+    src: url(fonts/adobe/AdobeDevanagari-BoldItalic.otf);
+    font-style: italic;
+    font-weight: bolder;
+}
+
+@font-face {
+    font-family: adobe-bold;
+    src: url(fonts/adobe/AdobeDevanagari-Bold.otf);
+    font-weight: bolder;
+
+}
+
+
+@font-face {
+    font-family: futura;
+    src: url(fonts/futura/FuturaLT-Book);
+}
+
+@font-face {
+    font-family: futura;
+    src: url(fonts/futura/FuturaLT-Bold.otf);
+    font-weight: bold;
+}
+
+.header{
+  letter-spacing: -2px;
+  font-size: 60px !important;
+  font-family: adobe;
+  margin-top: 50px;
+  margin-bottom: -15px;
+
+  font-weight: normal
+}
+
+.header b {
+  font-family: adobe-bold;
+}
+
+.header b i{
+  font-family: adobe-italic;
+}
+
+
+body{
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.menu-item{
+  background-color: white;
+  font-size: 18px;
+  font-family: futura;
+  transition: .5s ease-out background-color;
+  /*margin-right: 10px;*/
+  color: black
+}
+
+
+.menu-item:hover{
+  background-color:black;
+  color:rgb(255, 255, 255)
+}
+
+.menu-item.chosen{
+  font-weight: 900;
+}
+
+.image img {
+  width: 600px;
+  margin-top: 50px;
+}
+.image p{
+  font-family: adobe-italic;
+  margin: 20px;
+}
+
+
+.sep-line{
+  height: 10px;
+  width: 10px;
+  background: black;
+  margin: 8px;
+  animation-name: rotate;
+  animation-duration: 1.5s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-timing-function:cubic-bezier(0.6, 0, 0.4, 1);
+}
+
+
+@keyframes rotate {
+  from {transform: rotate(-45deg);}
+  to {transform: rotate(135deg);}
+}
